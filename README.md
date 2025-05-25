@@ -12,9 +12,7 @@ REST API for an online marketplace with authentication, product management, shop
 - 🔐 JWT Authentication
 - 🛒 Shopping Cart Management
 - 📦 Order Processing System
-- 🛠️ CRUD Operations for Products & Categories
 - 👮 Role-Based Access Control (USER/ADMIN)
-- 📅 Order Timestamp Logging
 - ⚡ Redis Caching
 
 ## 🛠 Technologies
@@ -24,7 +22,7 @@ REST API for an online marketplace with authentication, product management, shop
 - **Spring Boot**
 - **JWT**
 - **Redis**
-- **Maven**: Maven
+- **Maven**
 
 ## 🚀 Getting Started
 ### Prerequisites
