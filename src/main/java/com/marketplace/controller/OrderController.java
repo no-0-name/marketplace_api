@@ -17,7 +17,7 @@ import java.util.List;
 public class OrderController {
     private final OrderService orderService;
 
-    @PostMapping
+    @PostMapping("/add")
     public ResponseEntity<String> createOrder(@AuthenticationPrincipal User user, @RequestBody OrderRequestDTO request) {
         OrderDTO orderDTO = orderService.createOrderFromCart(
                 user.getId(),
