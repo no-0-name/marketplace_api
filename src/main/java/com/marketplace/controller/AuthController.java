@@ -61,7 +61,7 @@ public class AuthController {
     }
 
     @GetMapping("/profile")
-    public ResponseEntity<RegisterResponseDTO> getCurrentUser(@AuthenticationPrincipal User user) {
+    public ResponseEntity<RegisterResponseDTO> getProfile(@AuthenticationPrincipal User user) {
         return ResponseEntity.ok(RegisterResponseDTO.fromUser(user));
     }
 }
