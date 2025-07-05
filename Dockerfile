@@ -1,4 +1,9 @@
-FROM ubuntu:latest
-LABEL authors="gorde"
+FROM openjdk:21
 
-ENTRYPOINT ["top", "-b"]
+WORKDIR /app
+
+COPY target/*.jar app.jar
+
+EXPOSE 8080
+
+ENTRYPOINT ["java", "-jar", "app.jar"]
