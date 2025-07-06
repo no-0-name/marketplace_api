@@ -1,10 +1,10 @@
 # Marketplace API
 
-![Java](https://img.shields.io/badge/java-21-red)
-![Spring Boot](https://img.shields.io/badge/spring%20boot-3.2.1-brightgreen)
-![PostgreSQL](https://img.shields.io/badge/postgresql-42.7.5-blue)
-![Redis](https://img.shields.io/badge/redis-6.2.4-orange)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+![Java](https://img.shields.io/badge/java-red)
+![Spring Boot](https://img.shields.io/badge/spring%20boot-brightgreen)
+![PostgreSQL](https://img.shields.io/badge/postgresql-blue)
+![Redis](https://img.shields.io/badge/redis-orange)
+![Docker](https://img.shields.io/badge/docker-blue)
 
 REST API for an online marketplace with authentication, product management, shopping cart, and order processing.
 
@@ -23,34 +23,14 @@ REST API for an online marketplace with authentication, product management, shop
 - **JWT**
 - **Redis**
 - **Maven**
+- **Docker**
 
-## 🚀 Getting Started
-### Prerequisites
-- Java 21+
-- PostgreSQL 15+
-- Redis 6.2+
-- Maven 3.9+
 
-### Configuration
+## ⚙ Configuration
 1. Create a PostgreSQL database
 2. For install redis on your pc use `sudo apt install redis-cli`
-3. Configure `application.properties`:
-```properties
-# Database
-spring.datasource.url=jdbc:postgresql://localhost:5432/your_db
-spring.datasource.username=your_username_db
-spring.datasource.password=your_password_db
-
-# JWT
-jwt.secret=your_jwt_secrete
-jwt.expiration=86400000
-
-# Redis
-spring.redis.host=localhost
-spring.redis.port=6379
-spring.cache.type=redis
-spring.cache.redis.time-to-live=3600000
-```
+3. Configure `application.properties`
+4. Run your project
 
 ## 👥 Contributing
 
